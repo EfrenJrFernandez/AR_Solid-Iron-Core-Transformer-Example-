@@ -1,4 +1,7 @@
-# Solid Iron Core Transformer Example Readme:
+# Solid Iron Core Transformer Example
+**Ver 1.0.0**
+The following example portrays a 3D model of a iron core transformer in AR to aid in student's understanding and visualization of the concept.
+
 
 To access the example please scan the following QR code:
 
