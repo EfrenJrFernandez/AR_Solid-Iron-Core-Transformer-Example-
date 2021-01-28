@@ -48,17 +48,6 @@
             }
         </style>
     </head>
-
-    <body style="margin: 0; overflow: hidden;">
-        <script type="text/javascript">
-            gltf = document.querySelector('#bowser-model');
-            var scene = document.querySelector('a-scene');
-            scene.addEventListener('loaded', function (e) {
-                mesh = gltf.getObject3D('mesh');
-                console.log(mesh);
-            });
-        </script>
-        
         <!-- A collapsable Menu that provides some information -->
         <div align="center" style='position: fixed; top: 10px; width:100%; text-align: left; z-index: 1;'>
             <button class="collapsible" align="center">Instructions</button>
@@ -138,5 +127,13 @@
             }
         </script>
         
+        <script type="text/javascript">
+            gltf = document.querySelector('#bowser-model');
+            var scene = document.querySelector('a-scene');
+            scene.addEventListener('loaded', function (e) {
+                mesh = gltf.getObject3D('mesh');
+                console.log(mesh);
+            });
+        </script>
     </body>
 </html>
