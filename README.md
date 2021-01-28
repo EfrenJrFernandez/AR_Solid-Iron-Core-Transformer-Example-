@@ -3,7 +3,7 @@
 To access the example please scan the following QR code:
 
 
-![](Images/QR%20Code.png)
+![](Images/QR-Code.png)
 
 
 The marker for this example is given below:
