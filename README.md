@@ -1,1 +1,0 @@
-# Solid-Iron-Core-Xfmr-Example
