@@ -1,7 +1,5 @@
 <!doctype html>
 <html>
-    
-    
     <head>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -27,7 +25,7 @@
                 background-color: #555;
             }
             
-            .content { /*Style the collapsible content, this is hidden by default */
+            .content { /*Styles the collapsible content, this is hidden by default */
                 padding: 0 18px;
                 text-align: center;
                 max-height: 0;
@@ -122,6 +120,15 @@
             <a-entity camera></a-entity>
         </a-scene>
         
+        <script type="text/javascript">
+            gltf = document.querySelector('#bowser-model');
+            var scene = document.querySelector('a-scene');
+            scene.addEventListener('loaded', function (e) {
+                mesh = gltf.getObject3D('mesh');
+                console.log(mesh);
+            });
+        </script>
+        
         <!-- This script is for the collapsible menus -->
         <script>
             var coll = document.getElementsByClassName("collapsible");
@@ -138,15 +145,6 @@
                         } 
                 });
             }
-        </script>
-        
-        <script type="text/javascript">
-            gltf = document.querySelector('#bowser-model');
-            var scene = document.querySelector('a-scene');
-            scene.addEventListener('loaded', function (e) {
-                mesh = gltf.getObject3D('mesh');
-                console.log(mesh);
-            });
         </script>
     </body>
 </html>
